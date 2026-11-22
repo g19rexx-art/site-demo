@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Submit an environmental problem report for Bwaise, Kampala, including illegal dumping, blocked drainage and flooding.">
+    <title>Report a Problem | Bwaise Clean & Safe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/report.js" defer></script>
+</head>
+<body>
+
+    <!-- Website Header -->
+    <header class="site-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">♻</span>
+                <span>Bwaise <strong>Clean & Safe</strong></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="report-problem.html" class="active" aria-current="page">Report a Problem</a>
+                <a href="waste-collection.html">Waste Collection</a>
+                <a href="report-status.html">Report Status</a>
+                <a href="locations.html">Problem Location</a>
+                <a href="community.html">Community</a>
+                <a href="education.html">Education & Tips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a href="report-problem.html" class="nav-button">Report Now</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-banner">
+            <div class="container">
+                <span class="section-label">HELP IMPROVE OUR COMMUNITY</span>
+                <h1>Report an Environmental Problem</h1>
+                <p>
+                    Help identify environmental challenges in Bwaise.
+                    Submit accurate information so that the relevant
+                    people and organisations can be informed.
+                </p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / Report a Problem
+                </div>
+            </div>
+        </section>
+
+        <!-- Reporting Information -->
+        <section class="report-section section-padding">
+            <div class="container report-layout">
+
+                <div class="report-information">
+                    <span class="section-label">YOUR VOICE MATTERS</span>
+                    <h2>Help Us Identify Problems in Bwaise</h2>
+
+                    <p>
+                        Residents can use this form to report environmental
+                        concerns affecting their neighbourhood. Reports
+                        may help improve communication between residents,
+                        service providers and relevant authorities.
+                    </p>
+
+                    <figure class="theme-photo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Drainage_channel_in_Natete%2C_Kampala_%284332278352%29.jpg" alt="Rainwater and litter surrounding a blocked roadside storm drain" loading="lazy" decoding="async">
+                        <figcaption>Illustrative photograph of a drainage problem.</figcaption>
+                    </figure>
+
+                    <div class="report-info-card">
+                        <h3>Problems You Can Report</h3>
+
+                        <ul>
+                            <li>Illegal waste dumping</li>
+                            <li>Overflowing rubbish collection points</li>
+                            <li>Blocked drainage channels</li>
+                            <li>Flooding</li>
+                            <li>Other environmental concerns</li>
+                        </ul>
+                    </div>
+
+                    <div class="report-info-card assistance-card">
+                        <h3>Need Help Submitting a Report?</h3>
+                        <p>
+                            If you cannot take or upload a photograph,
+                            you may seek assistance from an authorised
+                            administrator or community representative
+                            who can help submit the report on your behalf.
+                        </p>
+                    </div>
+
+                    <p class="privacy-note">
+                        Your contact details and uploaded photograph
+                        should only be accessible to authorised personnel.
+                        They should not be displayed publicly.
+                    </p>
+                </div>
+
+                <!-- Report Form -->
+                <div class="report-form-card">
+
+                    <div class="form-heading">
+                        <h2>Environmental Report Form</h2>
+                        <p>
+                            Fields marked with an asterisk (*) are required.
+                        </p>
+                    </div>
+
+                    <form id="problemReportForm">
+
+                        <div class="form-group">
+                            <label for="fullName">Full Name (Optional)</label>
+                            <input
+                                type="text"
+                                id="fullName"
+                                name="fullName"
+                                placeholder="Enter your full name">
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="e.g. 07XXXXXXXX">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="example@email.com">
+                            </div>
+
+                        </div>
+
+                        <p class="form-hint">
+                            Provide at least one valid contact method:
+                            phone number or email address.
+                        </p>
+
+                        <div class="form-group">
+                            <label for="problemType">Problem Category *</label>
+                            <select id="problemType" name="problemType" required>
+                                <option value="">Select a problem category</option>
+                                <option value="Illegal waste dumping">Illegal waste dumping</option>
+                                <option value="Overflowing rubbish collection points">Overflowing rubbish collection points</option>
+                                <option value="Blocked drainage channels">Blocked drainage channels</option>
+                                <option value="Flooding">Flooding</option>
+                                <option value="Other">Other environmental problem</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Problem Location *</label>
+                            <input
+                                type="text"
+                                id="location"
+                                name="location"
+                                placeholder="Enter area, village, street or road"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="landmark">Nearby Landmark *</label>
+                            <input
+                                type="text"
+                                id="landmark"
+                                name="landmark"
+                                placeholder="e.g. Near a school, market or junction"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Problem Description *</label>
+                            <textarea
+                                id="description"
+                                name="description"
+                                rows="5"
+                                placeholder="Explain the problem, its condition and how it affects the community..."
+                                required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="photo">Upload a Photograph *</label>
+                            <input
+                                type="file"
+                                id="photo"
+                                name="photo"
+                                accept="image/jpeg,image/png,image/webp"
+                                required>
+                            <p class="form-hint">
+                                A photograph is required. Accepted formats:
+                                JPG, PNG and WEBP.
+                            </p>
+                        </div>
+
+                        <div class="form-notice">
+                            <strong>Before submitting:</strong>
+                            Check that your location and description
+                            are accurate and that your photograph
+                            clearly shows the reported problem.
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-report-btn">
+                            Submit Environmental Report
+                        </button>
+
+                    </form>
+
+                    <!-- Submission Confirmation -->
+                    <div id="reportSuccess" class="report-success" hidden>
+                        <div class="success-icon">✓</div>
+                        <h2>Report Prepared Successfully!</h2>
+                        <p>
+                            Your demonstration report has been processed
+                            in this browser session.
+                        </p>
+
+                        <div class="reference-details">
+                            <p>Reference Number</p>
+                            <strong id="referenceNumber"></strong>
+
+                            <p>Submission Date and Time</p>
+                            <strong id="submissionDate"></strong>
+                        </div>
+
+                        <p class="demo-warning">
+                            Demonstration only: this prototype does not
+                            transmit or permanently store reports.
+                        </p>
+
+                        <button type="button" id="newReportButton" class="btn btn-outline">
+                            Prepare Another Report
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <a href="index.html" class="footer-logo">♻ Bwaise Clean &amp; Safe</a>
+                <p>Working together for a cleaner, safer and healthier Bwaise through responsible waste management and community participation.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a><a href="about.html">About Us</a><a href="report-problem.html">Report a Problem</a><a href="waste-collection.html">Waste Collection</a><a href="report-status.html">Report Status</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Explore &amp; Contact</h3>
+                <a href="locations.html">Problem Locations</a><a href="community.html">Community Activities</a><a href="education.html">Education &amp; Tips</a><a href="contact.html">Contact Us</a>
+                <p>Bwaise, Kawempe Division, Kampala, Uganda</p>
+            </div>
+        </div>
+        <div class="footer-bottom"><div class="container"><p>&copy; 2026 Bwaise Clean &amp; Safe. All rights reserved.</p></div></div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Administrative dashboard prototype for the Bwaise Clean & Safe community waste management system.">
+    <title>Admin Dashboard | Bwaise Clean & Safe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+                    <a href="index.html" class="logo">
+                <span class="logo-icon">♻</span>
+                <span>Bwaise <strong>Clean & Safe</strong></span>
+            </a>
+
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="report-problem.html">Report a Problem</a>
+                <a href="waste-collection.html">Waste Collection</a>
+                <a href="report-status.html">Report Status</a>
+                <a href="locations.html">Problem Location</a>
+                <a href="community.html">Community Activities</a>
+                <a href="education.html">Education & Tips</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="admin.html" class="active">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- DASHBOARD BANNER -->
+        <section class="page-banner admin-banner">
+            <div class="container">
+                <span class="section-label">ADMINISTRATION</span>
+                <h1>Admin Dashboard</h1>
+                <p>
+                    An administrative interface prototype for overseeing
+                    community reports and waste management requests.
+                </p>
+            </div>
+        </section>
+
+        <!-- PROTOTYPE NOTICE -->
+        <section class="container admin-notice">
+            <strong>Prototype Notice:</strong>
+            This dashboard uses demonstration information only.
+            It is not connected to a live database and does not provide
+            secure administrator authentication.
+        </section>
+
+        <!-- DASHBOARD OVERVIEW -->
+        <section class="admin-overview container">
+
+            <div class="admin-heading">
+                <div>
+                    <span class="section-label">SYSTEM OVERVIEW</span>
+                    <h2>Dashboard Summary</h2>
+                    <p>Illustrative figures showing how an administrator could monitor activity.</p>
+                </div>
+
+                <span class="admin-date">Demonstration Data</span>
+            </div>
+
+            <div class="admin-stats">
+
+                <div class="admin-stat-card">
+                    <span class="stat-icon">📋</span>
+                    <h3>120</h3>
+                    <p>Total Reports</p>
+                    <small>Illustrative figure</small>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="stat-icon">⏳</span>
+                    <h3>35</h3>
+                    <p>Under Review</p>
+                    <small>Illustrative figure</small>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="stat-icon">📨</span>
+                    <h3>25</h3>
+                    <p>Referred Reports</p>
+                    <small>Illustrative figure</small>
+                </div>
+
+                <div class="admin-stat-card">
+                    <span class="stat-icon">✓</span>
+                    <h3>60</h3>
+                    <p>Resolved Reports</p>
+                    <small>Illustrative figure</small>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ADMIN FUNCTIONS -->
+        <section class="admin-functions-section">
+            <div class="container">
+
+                <h2>Administrative Functions</h2>
+
+                <p class="section-description">
+                    The following functions represent the responsibilities
+                    of an authorised administrator within the proposed system.
+                </p>
+
+                <div class="admin-functions-grid">
+
+                    <article class="admin-function-card">
+                        <span>📥</span>
+                        <h3>Review Submitted Reports</h3>
+                        <p>
+                            Examine reports submitted by residents,
+                            including their descriptions, locations
+                            and supporting photographs.
+                        </p>
+                    </article>
+
+                    <article class="admin-function-card">
+                        <span>🔍</span>
+                        <h3>Verify Report Information</h3>
+                        <p>
+                            Check the information provided to help
+                            identify incomplete, unclear or duplicate reports.
+                        </p>
+                    </article>
+
+                    <article class="admin-function-card">
+                        <span>🔄</span>
+                        <h3>Update Report Progress</h3>
+                        <p>
+                            Record progress as reports move through
+                            review, referral and resolution stages.
+                        </p>
+                    </article>
+
+                    <article class="admin-function-card">
+                        <span>🚛</span>
+                        <h3>Manage Collection Requests</h3>
+                        <p>
+                            Review waste collection requests and coordinate
+                            with relevant collection providers.
+                        </p>
+                    </article>
+
+                    <article class="admin-function-card">
+                        <span>📊</span>
+                        <h3>Monitor Reports</h3>
+                        <p>
+                            Review report categories and progress information
+                            to support administrative decision-making.
+                        </p>
+                    </article>
+
+                    <article class="admin-function-card">
+                        <span>📢</span>
+                        <h3>Support Community Engagement</h3>
+                        <p>
+                            Coordinate information sharing and community
+                            environmental awareness activities.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SAMPLE REPORT TABLE -->
+        <section class="admin-reports container">
+
+            <div class="admin-heading">
+                <div>
+                    <h2>Sample Report Records</h2>
+                    <p>Illustrative records demonstrating how reports could appear in the dashboard.</p>
+                </div>
+            </div>
+
+            <div class="admin-table-wrapper">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Reference Number</th>
+                            <th>Problem Category</th>
+                            <th>Location</th>
+                            <th>Date Submitted</th>
+                            <th>Report Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>BCS-10000001</td>
+                            <td>Blocked Drainage</td>
+                            <td>Example Area A, Bwaise</td>
+                            <td>10 Nov 2026</td>
+                            <td><span class="admin-status under-review">Under Review</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BCS-10000002</td>
+                            <td>Illegal Dumping</td>
+                            <td>Example Area B, Bwaise</td>
+                            <td>11 Nov 2026</td>
+                            <td><span class="admin-status referred">Referred</span></td>
+                        </tr>
+
+                        <tr>
+                            <td>BCS-10000003</td>
+                            <td>Flooding</td>
+                            <td>Example Area C, Bwaise</td>
+                            <td>12 Nov 2026</td>
+                            <td><span class="admin-status resolved">Resolved</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="admin-table-note">
+                These records are fictional examples for demonstration purposes.
+                They do not represent actual reports submitted by Bwaise residents.
+            </p>
+
+        </section>
+
+        <!-- ADMIN RESPONSIBILITIES -->
+        <section class="admin-responsibilities">
+            <div class="container">
+                <h2>Administrator Responsibilities</h2>
+
+                <div class="responsibilities-grid">
+                    <div>
+                        <h3>Protect Resident Information</h3>
+                        <p>
+                            Keep residents' contact details and submitted
+                            photographs confidential and accessible only
+                            to authorised personnel.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Maintain Accurate Records</h3>
+                        <p>
+                            Ensure report details and progress updates
+                            are recorded accurately and responsibly.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3>Coordinate with Relevant Parties</h3>
+                        <p>
+                            Refer concerns to the appropriate service
+                            providers or local authorities when necessary.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <a href="index.html" class="footer-logo">♻ Bwaise Clean &amp; Safe</a>
+                <p>Working together for a cleaner, safer and healthier Bwaise through responsible waste management and community participation.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a><a href="about.html">About Us</a><a href="report-problem.html">Report a Problem</a><a href="waste-collection.html">Waste Collection</a><a href="report-status.html">Report Status</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Explore &amp; Contact</h3>
+                <a href="locations.html">Problem Locations</a><a href="community.html">Community Activities</a><a href="education.html">Education &amp; Tips</a><a href="contact.html">Contact Us</a>
+                <p>Bwaise, Kawempe Division, Kampala, Uganda</p>
+            </div>
+        </div>
+        <div class="footer-bottom"><div class="container"><p>&copy; 2026 Bwaise Clean &amp; Safe. All rights reserved.</p></div></div>
+    </footer>
+
+</body>
+</html>

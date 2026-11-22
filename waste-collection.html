@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Collection | Bwaise Clean & Safe</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/waste.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">♻</span>
+                <span>Bwaise <strong>Clean & Safe</strong></span>
+            </a>
+
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="report-problem.html">Report a Problem</a>
+                <a href="waste-collection.html" class="active">Waste Collection</a>
+                <a href="report-status.html">Report Status</a>
+                <a href="locations.html">Problem Location</a>
+                <a href="community.html">Community</a>
+                <a href="education.html">Education & Tips</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+            <a href="report-problem.html" class="nav-button">Report Now</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE BANNER -->
+        <section class="page-banner">
+            <div class="container">
+                <span class="section-label">RESPONSIBLE WASTE MANAGEMENT</span>
+                <h1>Waste Collection Services</h1>
+                <p>Find waste collection information and prepare a request for assistance.</p>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / Waste Collection
+                </div>
+            </div>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="section-padding">
+            <div class="container waste-intro">
+
+                <div>
+                    <span class="section-label">KEEPING BWAise CLEAN</span>
+                    <h2>Proper Waste Collection Makes a Difference</h2>
+                    <p>Poor waste disposal contributes to pollution, unpleasant surroundings and blocked drainage channels.</p>
+                    <p>Bwaise Clean & Safe helps residents access waste collection information and express their need for collection services.</p>
+                    <a href="#collection-request" class="btn btn-primary">Prepare a Collection Request</a>
+                </div>
+
+                <div class="waste-intro-card">
+                    <figure class="theme-photo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/City_garbage_truck.jpg" alt="Waste collection worker loading a wheelie bin onto a collection truck" loading="lazy" decoding="async">
+                        <figcaption>Illustrative waste collection photograph.</figcaption>
+                    </figure>
+                    <div class="waste-large-icon">🚛</div>
+                    <h3>Cleaner Surroundings, Healthier Communities</h3>
+                    <p>Proper waste management helps reduce littering and prevents rubbish from entering drainage systems.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- WASTE MANAGEMENT PRACTICES -->
+        <section class="waste-practices section-padding">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-label">MANAGE WASTE RESPONSIBLY</span>
+                    <h2>Good Waste Management Practices</h2>
+                    <p>Residents can contribute to a cleaner environment through simple daily practices.</p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">🗑️</div>
+                        <h3>Use Proper Waste Containers</h3>
+                        <p>Keep rubbish in appropriate containers instead of leaving it in open spaces.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">♻️</div>
+                        <h3>Separate Recyclable Materials</h3>
+                        <p>Separate recyclable materials from general waste where facilities are available.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">🚯</div>
+                        <h3>Avoid Illegal Dumping</h3>
+                        <p>Do not dump rubbish in drainage channels, roadsides, wetlands or unauthorised areas.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- COLLECTION REQUEST FORM -->
+        <section class="section-padding" id="collection-request">
+            <div class="container collection-layout">
+
+                <div class="collection-info">
+                    <span class="section-label">REQUEST COLLECTION INFORMATION</span>
+                    <h2>Need Waste Collection Assistance?</h2>
+                    <p>Complete this form to describe your waste collection needs. An authorised administrator can use the information to direct your enquiry to an available provider.</p>
+
+                    <div class="report-info-card">
+                        <h3>Before You Submit</h3>
+                        <ul>
+                            <li>Provide a correct contact number or email.</li>
+                            <li>Describe the waste clearly.</li>
+                            <li>Provide your location and nearby landmark.</li>
+                            <li>Indicate your preferred collection date.</li>
+                        </ul>
+                    </div>
+
+                    <div class="privacy-note">
+                        Submitting this form does not guarantee a booking. The provider must confirm availability, pricing and collection arrangements.
+                    </div>
+                </div>
+
+                <div class="collection-form-card">
+
+                    <div class="form-heading">
+                        <h2>Collection Request Form</h2>
+                        <p>Fields marked with an asterisk (*) are required.</p>
+                    </div>
+
+                    <form id="collectionForm">
+
+                        <div class="form-group">
+                            <label for="customerName">Full Name *</label>
+                            <input type="text" id="customerName" name="customerName" placeholder="Enter your full name" required>
+                        </div>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label for="customerPhone">Phone Number</label>
+                                <input type="tel" id="customerPhone" name="customerPhone" placeholder="Enter phone number">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="customerEmail">Email Address</label>
+                                <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter email address">
+                            </div>
+
+                        </div>
+
+                        <p class="form-hint">Provide at least one contact method.</p>
+
+                        <div class="form-group">
+                            <label for="wasteType">Type of Waste *</label>
+                            <select id="wasteType" name="wasteType" required>
+                                <option value="">Select waste type</option>
+                                <option value="Household waste">Household waste</option>
+                                <option value="Commercial waste">Commercial waste</option>
+                                <option value="Organic waste">Organic waste</option>
+                                <option value="Recyclable materials">Recyclable materials</option>
+                                <option value="Mixed waste">Mixed waste</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="wasteQuantity">Estimated Quantity *</label>
+                            <select id="wasteQuantity" name="wasteQuantity" required>
+                                <option value="">Select estimated quantity</option>
+                                <option value="Small">Small amount</option>
+                                <option value="Medium">Medium amount</option>
+                                <option value="Large">Large amount</option>
+                                <option value="Very large">Very large amount</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="collectionLocation">Collection Location *</label>
+                            <input type="text" id="collectionLocation" name="collectionLocation" placeholder="Enter your area, village or street" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="collectionLandmark">Nearby Landmark *</label>
+                            <input type="text" id="collectionLandmark" name="collectionLandmark" placeholder="Enter a nearby landmark" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="collectionDate">Preferred Collection Date *</label>
+                            <input type="date" id="collectionDate" name="collectionDate" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="collectionDetails">Additional Information</label>
+                            <textarea id="collectionDetails" name="collectionDetails" rows="4" placeholder="Enter additional information..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-report-btn">
+                            Submit Collection Request
+                        </button>
+
+                    </form>
+
+                    <!-- SUCCESS MESSAGE -->
+                    <div id="collectionSuccess" class="report-success" hidden>
+
+                        <div class="success-icon">✓</div>
+                        <h2>Request Prepared Successfully!</h2>
+                        <p>Your demonstration request has been processed in this browser session.</p>
+
+                        <div class="reference-details">
+                            <p>Request Reference Number</p>
+                            <strong id="collectionReference"></strong>
+                            <p>Submission Date and Time</p>
+                            <strong id="collectionSubmissionDate"></strong>
+                        </div>
+
+                        <p class="demo-warning">
+                            Demonstration only: no service provider has received this request and no collection is booked.
+                        </p>
+
+                        <button type="button" id="newCollectionRequest" class="btn btn-outline">
+                            Prepare Another Request
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="cta-section">
+            <div class="container cta-content">
+
+                <div>
+                    <span class="section-label">TAKE RESPONSIBILITY</span>
+                    <h2>Let's Keep Our Community Clean</h2>
+                    <p>Learn more about proper waste disposal and contribute to environmental improvement.</p>
+                </div>
+
+                <a href="education.html" class="btn btn-light">Explore Education & Tips</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-about">
+                <a href="index.html" class="footer-logo">♻ Bwaise Clean &amp; Safe</a>
+                <p>Working together for a cleaner, safer and healthier Bwaise through responsible waste management and community participation.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a><a href="about.html">About Us</a><a href="report-problem.html">Report a Problem</a><a href="waste-collection.html">Waste Collection</a><a href="report-status.html">Report Status</a>
+            </div>
+            <div class="footer-contact">
+                <h3>Explore &amp; Contact</h3>
+                <a href="locations.html">Problem Locations</a><a href="community.html">Community Activities</a><a href="education.html">Education &amp; Tips</a><a href="contact.html">Contact Us</a>
+                <p>Bwaise, Kawempe Division, Kampala, Uganda</p>
+            </div>
+        </div>
+        <div class="footer-bottom"><div class="container"><p>&copy; 2026 Bwaise Clean &amp; Safe. All rights reserved.</p></div></div>
+    </footer>
+
+</body>
+</html>
